@@ -1,11 +1,12 @@
 FROM ubuntu:15.10
 MAINTAINER toch
 
-# Install wget
+# Install a few requirements
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     lsb-release \
     module-init-tools \
+    openssh-client \
     wget
 
 # Install VirtualBox
