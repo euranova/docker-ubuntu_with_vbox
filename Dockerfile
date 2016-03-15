@@ -21,7 +21,7 @@ RUN wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb \
 
 # Setup the VirtualBox home directory
 ENV DATA_DIR="/data"
-ENV VBOX_HOME_USER="${DATA_DIR}/VirtualBox VMs"
+ENV VBOX_USER_HOME="${DATA_DIR}/VirtualBox VMs"
 ENV VAGRANT_HOME="${DATA_DIR}/vagrant.d"
 
 RUN test ! -f "${DATA_DIR}" -a ! -d "${DATA_DIR}" \
